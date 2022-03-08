@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RockPaperScissorsActivity">
+
+    <TextView
+        android:id="@+id/txtRock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Rock Paper Scissors Game!"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:id="@+id/tableRow_1"
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="176dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/button_0"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_rock" />
+
+        <ImageButton
+            android:id="@+id/button_1"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_scissors" />
+
+        <ImageButton
+            android:id="@+id/button_2"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_paper" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/txtChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="266dp"
+        android:layout_marginBottom="59dp"
+        android:text="Сhoose a shape"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRock" />
+
+    <TableRow
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow_1" >
+
+        <Button
+            android:id="@+id/btnResetRock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <ImageButton
+        android:id="@+id/buttonComp0"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="104dp"
+        android:visibility="invisible"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/txtChoose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRock"
+        app:srcCompat="@drawable/ic_rock" />
+
+    <ImageButton
+        android:id="@+id/buttonComp1"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="104dp"
+        android:visibility="invisible"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/txtChoose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRock"
+        app:srcCompat="@drawable/ic_scissors" />
+
+    <ImageButton
+        android:id="@+id/buttonComp2"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="104dp"
+        android:visibility="invisible"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/txtChoose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRock"
+        app:srcCompat="@drawable/ic_paper" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
